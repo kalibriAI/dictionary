@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <div class="input-lines">
+        <input type="text" id="word" placeholder="Enter word">
+        -
+        <input type="text" id="translation" placeholder="Enter translation">
+    </div>
+    <button id="addWordBtn">Add to Dictionary</button>
+    <div class="message" id="message"></div>
+
+    <div>
+        <label for="filterDate">Filter by Date:</label>
+        <input type="date" id="filterDate">
+        <label for="filterStatus">Filter by Status:</label>
+        <select id="filterStatus">
+            <option value="all">All</option>
+            <option value="learned">Learned</option>
+            <option value="not-learned">Not Learned</option>
+        </select>
+    </div>
+
+    <table id="dictionaryTable">
+        <thead>
+            <tr>
+                <th style="width: 480px">Word</th>
+                <th style="width: 480px">Translation</th>
+                <th style="width: 140px;">Added Date</th>
+                <th style="width: 70px;">Learned</th>
+                <th style="width: 180px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="dictionaryBody">
+            <!-- Words will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

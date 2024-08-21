@@ -1,0 +1,70 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+input, button, select {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+.message {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: red;
+}
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.learned {
+    background-color: #c8e6c9;
+}
+.not-learned {
+    background-color: #ffcdd2;
+}
+.toggle-btn, .delete-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addWordBtn {
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: rgb(7, 177, 7);
+    color: white;
+}
+
+#addWordBtn:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+#addWordBtn:not(:hover) {
+    transition: .2s;
+}
+
+.toggle-btn, .delete-btn {
+    border: none;
+    border-radius: 100px;
+    font-weight: 900;
+    background-color: gray;
+    color: white;
+}
+
